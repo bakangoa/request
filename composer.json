@@ -1,5 +1,6 @@
 {
     "name": "nanok/simple-http-request",
+    "version": "1.0.0",
     "type": "library",
     "description": "A PHP lib to make simple http request that use curl",
     "keywords": ["php","http","curl","lib"],
@@ -12,5 +13,10 @@
             "homepage": "https://bakangoa.wordpress.com/",
             "role": "Developer"
         }
-    ]
+    ],
+    "require" : {
+        "php" : "^5.5 || ^7.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
