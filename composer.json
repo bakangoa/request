@@ -1,0 +1,16 @@
+{
+    "name": "nanok/http-request",
+    "type": "library",
+    "description": "A PHP lib to make simple http request that use curl",
+    "keywords": ["php","http","curl","lib"],
+    "homepage": "https://github.com/Nanoky/request",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konan Yao Charles",
+            "email": "konancharlesyao@gmail.com",
+            "homepage": "https://bakangoa.wordpress.com/",
+            "role": "Developer"
+        }
+    ]
+}
