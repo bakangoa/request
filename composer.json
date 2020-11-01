@@ -1,5 +1,5 @@
 {
-    "name": "nanok/http-request",
+    "name": "nanok/simple-http-request",
     "type": "library",
     "description": "A PHP lib to make simple http request that use curl",
     "keywords": ["php","http","curl","lib"],
