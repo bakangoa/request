@@ -1,5 +1,7 @@
 <?php
 
+    namespace Goa\Http\Base;
+
     class Request
     {
 
