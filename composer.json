@@ -1,6 +1,6 @@
 {
     "name": "nanok/simple-http-request",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "description": "A PHP lib to make simple http request that use curl",
     "keywords": ["php","http","curl","lib"],
@@ -10,7 +10,7 @@
         {
             "name": "Konan Yao Charles",
             "email": "konancharlesyao@gmail.com",
-            "homepage": "https://bakangoa.wordpress.com/",
+            "homepage": "https://bakangoa.herokuapp.com/",
             "role": "Developer"
         }
     ],
