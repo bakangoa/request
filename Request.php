@@ -90,19 +90,18 @@
         /**
          * Send a http PUT request
          * @param String $url Where to send the request
-         * @param $id The id of the ressource
          * @param $data What to send
          * @param Array $httpheader Hearders to attach to the request
          * @param bool $json If response must be decoded json
          * @return $response Data from the response and null if something wrong
          */
-        public static function put(String $url, $id, $data, Array $httpheaders = [], bool $json = true)
+        public static function put(String $url, $data, Array $httpheaders = [], bool $json = true)
         {
             try {
                 $curl = curl_init();
 
                 $options = [
-                    CURLOPT_URL => trim($url) . "/" . $id,
+                    CURLOPT_URL => trim($url),
                     CURLOPT_RETURNTRANSFER => true,
                     CURLOPT_HTTPHEADER => $httpheaders,
                     CURLOPT_POSTFIELDS => http_build_query($data),
@@ -131,18 +130,17 @@
         /**
          * Send a http DELETE request
          * @param String $url Where to send the request
-         * @param $id The id of the ressource
          * @param Array $httpheader Hearders to attach to the request
          * @param bool $json If response must be decoded json
          * @return $response Data from the response and null if something wrong
          */
-        public static function delete(String $url, $id, Array $httpheaders = [], bool $json = true)
+        public static function delete(String $url, Array $httpheaders = [], bool $json = true)
         {
             try {
                 $curl = curl_init();
 
                 $options = [
-                    CURLOPT_URL => trim($url) . "/" . $id,
+                    CURLOPT_URL => trim($url),
                     CURLOPT_RETURNTRANSFER => true,
                     CURLOPT_HTTPHEADER => $httpheaders,
                     CURLOPT_CUSTOMREQUEST => 'DELETE'
