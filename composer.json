@@ -17,6 +17,11 @@
     "require" : {
         "php" : "^5.5 || ^7.0 || ^8.0"
     },
+    "autoload": {
+        "psr-4": {
+            "Bakangoa\\Http\\Request\\": "src/"
+        }
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }

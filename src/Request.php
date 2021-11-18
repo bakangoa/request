@@ -1,6 +1,6 @@
 <?php
 
-    namespace Goa\Http\Base;
+    namespace Bakangoa\Http\Request;
 
     class Request
     {
