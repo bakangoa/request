@@ -23,6 +23,8 @@
                     $url = $url . "?" . http_build_query($data);
                 }
 
+                $httpheaders = explode(",", str_replace("=", ":", urldecode(http_build_query($httpheaders, "", ","))));
+
                 $options = [
                     CURLOPT_URL => $url,
                     CURLOPT_RETURNTRANSFER => true,
@@ -60,6 +62,8 @@
         {
             try {
                 $curl = curl_init();
+
+                $httpheaders = explode(",", str_replace("=", ":", urldecode(http_build_query($httpheaders, "", ","))));
 
                 $options = [
                     CURLOPT_URL => $url,
@@ -100,6 +104,8 @@
             try {
                 $curl = curl_init();
 
+                $httpheaders = explode(",", str_replace("=", ":", urldecode(http_build_query($httpheaders, "", ","))));
+
                 $options = [
                     CURLOPT_URL => trim($url),
                     CURLOPT_RETURNTRANSFER => true,
@@ -138,6 +144,8 @@
         {
             try {
                 $curl = curl_init();
+
+                $httpheaders = explode(",", str_replace("=", ":", urldecode(http_build_query($httpheaders, "", ","))));
 
                 $options = [
                     CURLOPT_URL => trim($url),
